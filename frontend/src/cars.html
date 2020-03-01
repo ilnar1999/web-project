@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/category-form.css">
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            PopUpHide();
+        });
+
+        function PopUpShow() {
+            $("#popup1").show();
+        }
+
+        function PopUpHide() {
+            $("#popup1").hide();
+        }
+    </script>
 </head>
 
 <body>
@@ -26,14 +40,15 @@
         </ul>
     </nav>
     <article>
+
         <div class="category">
             <p>Sedans</p>
             <hr>
             <ul>
-                <li><a href="#"><img src="picture/sedan.png"></a></li>
-                <li><a href="#"><img src="picture/sedan.png"></a></li>
-                <li><a href="#"><img src="picture/sedan.png"></a></li>
-                <li><a href="#"><img src="picture/sedan.png"></a></li>
+                <li><a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a></li>
+                <li><a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a></li>
+                <li><a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a></li>
+                <li><a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a></li>
             </ul>
         </div>
         <div class="category">
@@ -43,6 +58,11 @@
         <div class="category">
             <p>Sport cars</p>
             <hr>
+        </div>
+        <div class="popup" id="popup1" onclick="popUpHide()">
+            <div class="popup-content">
+                <div class="close"><a href="javascript:PopUpHide()">&times;</a></div>
+            </div>
         </div>
     </article>
 </section>

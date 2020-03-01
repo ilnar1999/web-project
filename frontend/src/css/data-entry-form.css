@@ -28,7 +28,7 @@
 .form-authorization .submit {
     width: 135px;
     padding: 10px;
-    margin: 0px 5px 0px 5px;
+    margin: 10px 5px 0px 5px;
     border-radius: 5px;
     background-color: #666;
     color: #eee;
@@ -36,4 +36,20 @@
 
 .form-authorization .submit:hover{
     background-color: #444;
+}
+
+.form-authorization .red_button {
+    background-color: #c70000;
+}
+
+.form-authorization .red_button:hover {
+    background-color: #a70000;
+}
+
+.form-authorization .green_button {
+    background-color: #288c00;
+}
+
+.form-authorization .green_button:hover {
+    background-color: #1e6900;
 }

@@ -5,6 +5,7 @@ div.category {
     padding: 10px;
     margin: 30px;
     border-radius: 10px;
+    font-size: 20px;
 }
 
 div.category img {
@@ -25,3 +26,36 @@ li {
     float: left;
 }
 
+.popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.popup .popup-content{
+    margin: 10% auto auto auto;
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #555;
+}
+
+div.close {
+    text-align: right;
+    margin-right: 5px;
+}
+
+div.close a {
+    font-size: 40px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

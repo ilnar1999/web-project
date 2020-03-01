@@ -19,13 +19,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
+    background-image: url('../picture/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 article {
     background-color: white;
     padding: 10px;
     border: 1px solid #ccc;
-    background-image: url('picture/background.jpg');
 }
 
 footer {
