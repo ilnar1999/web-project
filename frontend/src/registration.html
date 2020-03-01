@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Authorization</title>
+    <title>Registration</title>
     <meta charset="UTF-8"/>
     <link rel="shortcut icon" href="picture/logo.png" type="image/png">
     <link rel="stylesheet" href="css/layout.css">
@@ -18,15 +18,16 @@
 <section>
     <nav>
         <ul class="nav">
-            <li><a href="#" onclick="alert('You must log in!')">Cars</a></li>
-            <li><a href="#" onclick="alert('You must log in!')">Foo</a></li>
-            <li><a href="#" onclick="alert('You must log in!')">Bar</a></li>
-            <li class="right"><a href="#" onclick="alert('You must log in!')"><img class="nav" src="picture/magnifier.png" alt="magnifier"> Search</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Foo</a></li>
+            <li><a href="#">Bar</a></li>
+            <li class="right"><a href="index.html"><img class="nav" src="picture/log_in.png" alt="log in"> Log In</a></li>
+            <li class="right"><a href="#"><img class="nav" src="picture/magnifier.png" alt="magnifier"> Search</a></li>
         </ul>
     </nav>
     <article>
-        <form class="form-authorization" action="cars.html">
-            <h3>Authorization</h3>
+        <form class="form-authorization" action="index.html">
+            <h3>Registration</h3>
             <p>
                 <label>Login:</label><br>
                 <input type="text"  class="text" size="18"><br>
@@ -36,8 +37,7 @@
                 <input type="password" class="text" size="18"><br>
             </p>
             <p>
-                <input type="submit" class="submit" value="Log In">
-                <a href="registration.html"><input type="button" class="submit" value="Sign Up"></a>
+                <input type="submit" class="submit" value="Sign Up" onclick="alert('Sign up was successful!')">
             </p>
         </form>
     </article>

@@ -1,0 +1,27 @@
+div.category {
+    background-color: #ddd;
+    box-shadow: 0px 0px 3px gray;
+    width: 924px;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+div.category img {
+    width: 30%;
+    box-shadow: 1px 3px 4px gray;
+    border: 1px solid gray;
+}
+
+div.category ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 25px;
+}
+
+li {
+    float: left;
+}
+
