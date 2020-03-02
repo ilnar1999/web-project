@@ -12,18 +12,11 @@ div.category img {
     width: 30%;
     box-shadow: 1px 3px 4px gray;
     border: 1px solid gray;
+    margin: 10px;
 }
 
-div.category ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: 25px;
-}
-
-li {
-    float: left;
+div.category p {
+    text-align: center;
 }
 
 .popup {
