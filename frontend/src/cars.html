@@ -9,19 +9,7 @@
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/category-form.css">
     <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            PopUpHide();
-        });
-
-        function PopUpShow() {
-            $("#popup1").show();
-        }
-
-        function PopUpHide() {
-            $("#popup1").hide();
-        }
-    </script>
+    <script src="js/cars-information.js"></script>
 </head>
 
 <body>
@@ -36,7 +24,6 @@
             <li><a href="#">Foo</a></li>
             <li><a href="#">Bar</a></li>
             <li class="right"><a href="index.html"><img class="nav" src="picture/log_out.png" alt="log out"> Log Out</a></li>
-            <li class="right"><a href="#"><img class="nav" src="picture/magnifier.png" alt="magnifier"> Search</a></li>
         </ul>
     </nav>
     <article>
@@ -44,24 +31,55 @@
             <p>Sedans</p>
             <hr>
             <p class="category-layout">
-                <a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a>
-                <a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a>
-                <a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a>
-                <a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a>
-                <a href="javascript:PopUpShow()"><img src="picture/sedan.png"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sedan')"><img src="picture/sedan.png" class="category-img"></a>
             </p>
         </div>
         <div class="category">
             <p>SUVs</p>
             <hr>
+            <p class="category-layout">
+                <a href="javascript:PopUpShow('suv')"><img src="picture/suv.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('suv')"><img src="picture/suv.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('suv')"><img src="picture/suv.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('suv')"><img src="picture/suv.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('suv')"><img src="picture/suv.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('suv')"><img src="picture/suv.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('suv')"><img src="picture/suv.png" class="category-img"></a>
+            </p>
         </div>
         <div class="category">
             <p>Sport cars</p>
             <hr>
+            <p class="category-layout">
+                <a href="javascript:PopUpShow('sport_car')"><img src="picture/sport_car.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sport_car')"><img src="picture/sport_car.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sport_car')"><img src="picture/sport_car.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sport_car')"><img src="picture/sport_car.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sport_car')"><img src="picture/sport_car.png" class="category-img"></a>
+                <a href="javascript:PopUpShow('sport_car')"><img src="picture/sport_car.png" class="category-img"></a>
+            </p>
         </div>
-        <div class="popup" id="popup1" onclick="popUpHide()">
-            <div class="popup-content">
-                <div class="close"><a href="javascript:PopUpHide()">&times;</a></div>
+        <div class="popup" id="carInformation" onclick="popUpHide()">
+            <div class="carInformation-content">
+                <a href="javascript:PopUpHide()">&times;</a>
+                <div class="characteristics">
+                    <img src="" class="category-img" id="image">
+                    <p id="brand"></p>
+                    <p id="model"></p>
+                    <p id="color"></p>
+                    <p id="price"></p>
+                </div>
+                <div class="buttons">
+                    <button>Buy</button>
+                    <button>Test-Drive</button>
+                </div>
             </div>
         </div>
     </article>

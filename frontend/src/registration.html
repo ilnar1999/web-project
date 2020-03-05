@@ -16,30 +16,21 @@
 </header>
 
 <section>
-    <nav>
-        <ul class="nav">
-            <li><a href="#" onclick="alert('You must log in!')">Cars</a></li>
-            <li><a href="#" onclick="alert('You must log in!')">Foo</a></li>
-            <li><a href="#" onclick="alert('You must log in!')">Bar</a></li>
-            <li class="right"><a href="index.html"><img class="nav" src="picture/log_in.png" alt="log in"> Log In</a></li>
-            <li class="right"><a href="#" onclick="alert('You must log in!')"><img class="nav" src="picture/magnifier.png" alt="magnifier"> Search</a></li>
-        </ul>
-    </nav>
     <article>
-        <form class="form-authorization" action="index.html">
+        <form class="form-authorization" action="index.html" method="post">
             <h3>Registration</h3>
             <hr>
             <p>
                 <label>Login:</label><br>
-                <input type="text"  class="text" size="18"><br>
+                <input type="text"  class="text" size="18" required><br>
             </p>
             <p>
                 <label>Password:</label><br>
-                <input type="password" class="text" size="18"><br>
+                <input type="password" class="text" size="18" required><br>
             </p>
             <p>
-                <input type="submit" class="submit" value="Sign Up" onclick="alert('Sign up was successful!')">
-                <a href="index.html"><input type="button" class="submit red_button" value="Cancel"></a>
+                <input type="submit" class="submit" value="Sign Up">
+                <input type="button" class="submit red_button" value="Cancel" onclick="location.href='index.html'">
             </p>
         </form>
     </article>

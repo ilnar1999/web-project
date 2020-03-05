@@ -16,29 +16,21 @@
 </header>
 
 <section>
-    <nav>
-        <ul class="nav">
-            <li><a href="#" onclick="alert('You must log in!')">Cars</a></li>
-            <li><a href="#" onclick="alert('You must log in!')">Foo</a></li>
-            <li><a href="#" onclick="alert('You must log in!')">Bar</a></li>
-            <li class="right"><a href="#" onclick="alert('You must log in!')"><img class="nav" src="picture/magnifier.png" alt="magnifier"> Search</a></li>
-        </ul>
-    </nav>
     <article>
-        <form class="form-authorization" action="cars.html">
+        <form class="form-authorization" action="cars.html" method="post">
             <h3>Authorization</h3>
             <hr>
             <p>
                 <label>Login:</label><br>
-                <input type="text"  class="text" size="18"><br>
+                <input type="text" id="login" class="text" size="18" required><br>
             </p>
             <p>
                 <label>Password:</label><br>
-                <input type="password" class="text" size="18"><br>
+                <input type="password" id="password" class="text" size="18" required><br>
             </p>
             <p>
                 <input type="submit" class="submit green_button" value="Log In">
-                <a href="registration.html"><input type="button" class="submit" value="Sign Up"></a>
+                <input type="button" class="submit" value="Sign Up" onclick="location.href='registration.html'">
             </p>
         </form>
     </article>

@@ -8,11 +8,17 @@ div.category {
     font-size: 20px;
 }
 
-div.category img {
-    width: 30%;
+.category-img {
+    width: 275px;
     box-shadow: 1px 3px 4px gray;
     border: 1px solid gray;
     margin: 10px;
+}
+
+.carInformation-content .category-img {
+    width: 500px;
+    margin: 0px 20px 0px 10px;
+    float: left;
 }
 
 div.category p {
@@ -29,26 +35,48 @@ div.category p {
     left: 0px;
 }
 
-.popup .popup-content{
+.popup .carInformation-content{
     margin: 10% auto auto auto;
-    width: 700px;
-    height: 400px;
+    width: 900px;
+    height: 420px;
     padding: 10px;
     background-color: #eee;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #555;
+    font-size: 30px;
 }
 
-div.close {
-    text-align: right;
-    margin-right: 5px;
-}
-
-div.close a {
+.carInformation-content a {
+    float: right;
     font-size: 40px;
     width: 20px;
     height: 20px;
     text-decoration: none;
     color: black;
     text-align: center;
+    margin-right: 10px;
+}
+
+.characteristics {
+    overflow: hidden;
+    margin: 30px auto auto 10px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 10px;
+}
+
+.buttons button {
+    margin: 10px;
+    width: 415px;
+    height: 50px;
+    font-size: 30px;
+    background-color: #555;
+    color: #eee;
+    outline: none;
+}
+
+.buttons button:hover {
+    background-color: #333;
 }
