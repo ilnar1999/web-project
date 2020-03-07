@@ -15,7 +15,7 @@ div.category {
     margin: 10px;
 }
 
-.carInformation-content .category-img {
+.content .category-img {
     width: 500px;
     margin: 0px 20px 0px 10px;
     float: left;
@@ -35,7 +35,7 @@ div.category p {
     left: 0px;
 }
 
-.popup .carInformation-content{
+.popup .content{
     margin: 10% auto auto auto;
     width: 900px;
     height: 420px;
@@ -46,7 +46,11 @@ div.category p {
     font-size: 30px;
 }
 
-.carInformation-content a {
+.popup input{
+    font-size: 20px;
+}
+
+.content a {
     float: right;
     font-size: 40px;
     width: 20px;
